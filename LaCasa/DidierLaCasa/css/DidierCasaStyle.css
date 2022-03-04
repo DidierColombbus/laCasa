@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 150vw;
+    color: #fff;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+h1, h2, header p, header nav {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.212);
+}
+
+header p, header nav a, h3, figure, footer, ul, li a, #navigator {
+    font-size: 3vw;
+}
+
+h1, h2 {
+    font-family: 'Ephesis', cursive;
+    font-size: 6vw;
+    padding-top: 3vw;
+}
+
+h2 {
+    font-size: 16vw;
+    line-height: 1em;
+}
+
+header p {
+    padding: 1vw 0vw;
+}
+
+header nav {
+    padding: 4vw 0vw 6vw 0vw;
+}
+
+header nav a {
+    text-transform: none;
+    color: #fff;
+    text-decoration: none;
+    margin: 1em;
+    border: 0px;
+    border-radius: 5vw;
+    padding: 1vw;
+}
+
+header nav a:hover, .view:hover {
+    background-color: #c1d2d9;
+    color: #fff;
+    transition-delay: 0.3s;
+    transition-duration: 0.3s;
+}
+
+h3 {
+    width: 100%;
+    padding: 2em;
+    text-align: center;
+    color: #7bafc9;
+    text-transform: uppercase;
+    background-color: #c1d2d9;
+    margin-bottom: 1em;
+}
+
+span {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure {
+    border: 1px solid #c1d2d9;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+    margin-bottom: 2em;
+}
+
+/* une couleur de bordure pour mieux voir le prix */
+.prix {
+    border: 2px solid #c1d2d9;
+    background-color: #fff;
+    padding: 1em;
+    position: absolute;
+    /* margin-top: 0.5em;
+    margin-left: 0.5em; */
+    transform: translate(-50%, -50%); /* avec variante */
+}
+
+.produit{
+    font-weight: bolder;
+    margin: 1em;
+}
+
+.description{
+    opacity: 0.5;
+    margin: 1em;
+}
+
+.view{
+    border: 2px solid #c1d2d9;
+    background-color: #fff;
+    color: #c1d2d9;
+    padding: 1em;
+    border-radius: 5vw;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.view:hover{
+    border: 2px solid #7bafc9;
+    background-color: #7bafc9;
+}
+
+footer, ul, li a, #navigator a {
+    background-color: #7bafc9;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin: 1em;
+}
+
+li a:hover, #navigator i:hover {
+    color: orange;
+    transition-delay: 0.1s;
+    transition-duration: 0.1s;
+}
+
+#navigator, #copyright {
+    width: 80%;
+    text-align: center;
+}
+
+#navigator {
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+    line-height: 3em;
+    border-bottom: 1px solid #fff;
+}
+
+#navigator nav {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: -5vw;
+    justify-content: center;
+}
+
+#copyright {
+    margin: 1em;
+    padding: 1em;
+    font-size: 3vw;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
+    header{
+        height: 85vw;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    header nav a, header p {
+        font-size: 1.5vw;
+    }
+    
+    h1, h2, header nav, header p {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.212);
+    } 
+    
+    h1, h2, header nav a, header p {
+        margin-top: 0vw;
+    } 
+
+    header nav {
+        padding-bottom: 4vw;
+    }
+
+    h1 {
+        margin-bottom: 0;
+        font-size: 4vw;
+    }
+
+    h2 {
+        font-size: 8vw;
+        margin-bottom: 0;
+    }
+
+    header p {
+        padding-bottom: 1vw;
+    }
+
+    span {
+        display: initial;
+        margin-left: 20vw;
+    }
+    
+    main {
+        flex-flow: row wrap;
+        align-items: flex-start;
+    }
+
+    figure {
+        margin: 2vw;
+        flex: 1 1 45%;
+        font-size: 2vw;
+    }
+
+    figure img {
+        width: 100%;
+    }
+
+    main figure:last-of-type {
+        display: none;
+    }
+
+    main a {
+        margin-left: 39%;
+    }
+
+    footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #navigator, #copyright {
+        width: 90%;
+        text-align: center;
+        line-height: 1em;
+        font-size: 2vw;
+        margin-left: 5%;
+    }
+
+    #navigator nav{
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (min-width: 993px){
+    
+    header {
+        height: 60vw;
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+    }
+
+    header nav a, header p {
+        font-size: 1vw;
+        margin-top: 0vw;
+    }
+    /* faute d'une div contenant le titre et la nav, il faut créer 2 backgrounds pour les envelopper */
+    h1 {
+        flex-basis: 30%;
+        font-size: 2vw;
+        padding: 1vw 0vw 1vw 5vw;
+        background-color: rgba(0, 0, 0, 0.212);
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 4vw;
+        flex-basis: 100%;
+        margin: 0vw;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    header nav {
+        width: 70%;
+        background-color: rgba(0, 0, 0, 0.212);
+        padding: 1.37vw 0vw;
+    }
+
+    header p {
+        flex-basis: 100%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .bouton {
+        border: 2px solid #fff;
+        padding: 1vw;
+        border-radius: 5vw;
+    }
+
+    h3 {
+        font-size: 1vw;
+    }
+
+    /* Déplacement du "bouton" par rapport à l'exemple, équilibre visuel */
+    span {
+        display: initial;
+        margin-left: 50vw;
+    }
+
+    main {
+        padding: 0 2vw;
+        flex-flow: row wrap;
+    }
+
+    figure {
+        flex: 1 0 30%;
+        margin: 1vw;
+    }
+
+    figure img {
+        width: 100%;
+    }
+
+    main a {
+        margin-left: 42%;
+    }
+
+    figure p {
+        font-size: 1.2vw;
+    }
+
+    footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    li a, #navigator {
+        width: 25%;
+        flex-grow: 1;
+        text-align: justify;
+        line-height: 1em;
+        font-size: 1vw;
+        border: 0;
+    }
+
+    #navigator {
+        position: relative;
+        top: -4vw;
+        justify-self: start;
+    }
+
+    #navigator nav {
+        justify-content: start;
+    }
+
+    #copyright {
+        text-align: center;
+        font-size: 1vw;
+        border-top: 1px solid #fff;
+        margin-left: 9vw;
+    }
+
+}
